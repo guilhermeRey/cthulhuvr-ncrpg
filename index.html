@@ -6,12 +6,18 @@
   <title>Nerdcast RPG Call of Cthulhu - William Faraday</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/three.min.js"></script>
+  <script src="js/panolens.min.js"></script>
+  <script>
+    const panorama = new PANOLENS.ImagePanorama( '360_Post.jpg' );
+    const viewer = new PANOLENS.Viewer();
+    viewer.add( panorama );
+  </script>
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <iframe allowfullscreen src="examples/panorama_image.html"></iframe>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
   <script>
